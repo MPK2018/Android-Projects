@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListManagerActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <TextView
+            android:id="@id/textView_Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Second Screen"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="379dp"
+            android:layout_height="73dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:ems="10"
+            android:hint="@string/Item"
+
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etPrice"
+            android:layout_width="375dp"
+            android:layout_height="66dp"
+            android:layout_below="@+id/etTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="$ Item Price (0.00)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="385dp"
+            android:layout_height="71dp"
+            android:layout_below="@+id/etPrice"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="@string/ItemDescription"
+            android:inputType="text" />
+        <TextView
+            android:id="@+id/resultView"
+            android:layout_width="387dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/etDescription"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/btnPost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+
+            android:text="@string/Post" />
+        <!-- android:onClick="performActionPost" -->
+
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="190dp"
+            android:background="?android:attr/listDivider" />
+
+    </RelativeLayout>
+<!---->
+</android.support.constraint.ConstraintLayout>

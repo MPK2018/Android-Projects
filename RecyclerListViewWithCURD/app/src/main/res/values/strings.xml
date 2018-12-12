@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+    <resources>
+
+    <string name="app_name">List Manager</string>
+
+    <string name="Item">Item Name</string>
+
+    <string name="Price"> Item Price</string>
+
+    <string name="ItemDescription">Item Description</string>
+
+    <string name="Post">Add Post</string>
+    <string name="UpdatePost">Update Post</string>
+    <string name="NewPostSnackBar">"Thanks for posting</string>
+    <string name="title_activity_browse_posts">BrowsePostsActivity</string>
+        <string name="message">message</string>
+
+        <string-array name="errorCode" >
+        <item>ER001 Please Enter Item Name </item>
+        <item>ER002 Please Enter Item Price </item>
+        <item>ER003 Please Enter Item Name and Item Price.</item>
+        <item>ER004 Please Enter Item Description </item>
+        <item>ER005 Cannot reach this position </item>
+        <item>ER006 Please Enter Item Price and Description </item>
+        <item>ER007 Please Enter Item Name ItemPrice and Description </item>
+        <item>ER999 If you do not want to add item please go back</item>
+
+    </string-array>
+
+
+
+</resources>
